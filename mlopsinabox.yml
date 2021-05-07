@@ -28,6 +28,7 @@
           - flask
           - cloudpickle
           - pysqlite3 
+          - crudini
       pip:
         name: "{{package}}"
         state: present
