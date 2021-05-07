@@ -1,10 +1,21 @@
-# Cookiecutter Mlopsinabox
+# Mlopsinabox
 
 _A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
 
 
 #### [Project homepage](https://github.com/sharathtirumalaraju/mlopsinabox)
 
+#### Installing MLOps setup environment
+----------
+MLOps working environment can be installed on Windows and Linux distributions.
+ 
+- Ubuntu 20.04 or any linux distribution
+
+bash
+$ pip install python ansible
+
+bash
+$ ansible-playbook mlopsinabox.yml
 
 ### Requirements to use the cookiecutter template:
 -----------
@@ -78,12 +89,6 @@ The directory structure of your new project looks like this:
     │   └── visualization       <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
     ├── config.ini              <- configuration for git,dvc and mlflow
-
-### Installing development requirements
-------------
-
-    ansible-playbook mlopsinabox.yml
-
 
 {{cookiecutter.project_name}}
 ==============================
