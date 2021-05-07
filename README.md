@@ -20,7 +20,13 @@ $ ansible-playbook mlopsinabox.yml
 
 - Windows
 
-    - Download git from [git_download](https://git-scm.com/downloads)
+    - Download git from [git_download](https://git-scm.com/downloads) and install git.
+    - Install pip package manager for windows
+    - Install all required packages with pip
+        ```bash
+        $ pip install -r requirements.txt
+        ```
+     
 ### Requirements to use the cookiecutter template:
 -----------
  - Python 2.7 or 3.5+
