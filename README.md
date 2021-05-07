@@ -11,10 +11,10 @@ MLOps working environment can be installed on Windows and Linux distributions.
  
 - Ubuntu 20.04 or any linux distribution
 
-bash
+
 $ pip install python ansible
 
-bash
+
 $ ansible-playbook mlopsinabox.yml
 
 ### Requirements to use the cookiecutter template:
