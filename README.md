@@ -12,10 +12,7 @@ MLOps working environment can be installed on Windows and Linux distributions.
 - Ubuntu 20.04 or any linux distribution
 
 ```bash
-$ pip install python ansible
-```
-```bash
-$ ansible-playbook mlopsinabox.yml
+$ bash mlopsinabox_ansible.sh
 ```
 
 - Windows
@@ -23,33 +20,17 @@ $ ansible-playbook mlopsinabox.yml
     - Download git from [git_download](https://git-scm.com/downloads) and install git.
     - Install pip package manager for windows
     - Install all required packages with pip
-        ```bash
+        ```cmd
         $ pip install -r requirements.txt
         ```
-     
-### Requirements to use the cookiecutter template:
------------
- - Python 2.7 or 3.5+
- - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
-
-``` bash
-$ pip install cookiecutter
-```
-
-or
-
-``` bash
-$ conda config --add channels conda-forge
-$ conda install cookiecutter
-```
-
-
 ### To start a new project, run:
 ------------
-
-    python -m cookiecutter https://github.com/sharathtirumalaraju/mlopsinabox
-
-
+Run project on 
+- Linux distribution
+    - Run mlopsinabox_ubuntu.sh script in root directory. This installs complete setup that includes git,DVC and Mlflow.
+- Windows
+    - Run mlopsinabox_windows.sh script in root directory. This installs complete setup that includes git,DVC and Mlflow.
+  
 ### The resulting directory structure
 ------------
 
@@ -95,10 +76,14 @@ The directory structure of your new project looks like this:
     │   │   │                      predictions
     │   │   ├── predict_model.py
     │   │   └── train_model.py
+    |   |   └── config.ini
+    |   |   └── mlopsinabox.py
     │   │
     │   └── visualization       <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
-    ├── config.ini              <- configuration for git,dvc and mlflow
+    ├── config.ini              <- The config file for storing git config, mlflow tracking uri and dvc
+    |                              storage config
+          
 
 {{cookiecutter.project_name}}
 ==============================
