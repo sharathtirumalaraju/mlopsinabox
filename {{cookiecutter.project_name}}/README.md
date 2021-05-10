@@ -47,10 +47,10 @@ Project Organization
     │   │   │                      predictions
     │   │   ├── predict_model.py
     │   │   └── train_model.py
+    |   |   └── config.ini
+    |   |   └── mlopsinabox.py
     │   │
     │   └── visualization       <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
-    ├── config.ini              <- configuration for git,dvc and mlflow
-
-
+    
 --------
