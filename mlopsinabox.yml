@@ -13,7 +13,6 @@
           - python-pip
           - docker
           - docker-compose
-          - crudini
       apt:
         name: "{{packages}}"
         state: present
@@ -28,7 +27,8 @@
           - flask
           - cloudpickle
           - pysqlite3 
-          - crudini
+          - configparser
+          - cookiecutter
       pip:
         name: "{{package}}"
         state: present
