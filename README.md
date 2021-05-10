@@ -26,11 +26,8 @@ $ bash mlopsinabox_ansible.sh
 ### To start a new project, run:
 ------------
 Run project on 
-- Linux distribution
-    - Run mlopsinabox_ubuntu.sh script in root directory. This installs complete setup that includes git,DVC and Mlflow.
-- Windows
-    - Run mlopsinabox_windows.sh script in root directory. This installs complete setup that includes git,DVC and Mlflow.
-  
+- Linux distribution or Windows
+    - Run mlopsinabox.sh script in root directory. This installs complete setup that includes git,DVC and Mlflow.
 ### The resulting directory structure
 ------------
 
