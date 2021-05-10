@@ -1,5 +1,5 @@
 #start with cookiecutter template download
-python -m cookiecutter http://github.com/sharathtirumalaraju/mlopsinabox
+python -m cookiecutter https://de-mucingode1.corp.capgemini.com/gitlab/Sharath.Tirumalaraju/mlops_env
 #choose project directory
 read -p "enter your project name given above:" projectdirectory
 cd $projectdirectory
