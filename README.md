@@ -5,6 +5,12 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 #### [Project homepage](https://github.com/sharathtirumalaraju/mlopsinabox)
 
+#### To start with installing the environment setup
+----------
+```bash
+git clone https://github.com/sharathtirumalaraju/mlopsinabox_install_env
+```
+
 #### Installing MLOps setup environment
 ----------
 MLOps working environment can be installed on Windows and Linux distributions.
@@ -12,7 +18,7 @@ MLOps working environment can be installed on Windows and Linux distributions.
 - Ubuntu 20.04 or any linux distribution
 
 ```bash
-$ bash mlopsinabox_ansible.sh
+bash mlopsinabox_ansible.sh
 ```
 
 - Windows
@@ -20,14 +26,17 @@ $ bash mlopsinabox_ansible.sh
     - Download git from [git_download](https://git-scm.com/downloads) and install git.
     - Install pip package manager for windows
     - Install all required packages with pip
-        ```cmd
-        $ pip install -r requirements.txt
-        ```
+    ```cmd
+    pip install -r requirements.txt
+    ```
 ### To start a new project, run:
 ------------
 Run project on 
 - Linux distribution or Windows
-    - Run mlopsinabox.sh script in root directory. This installs complete setup that includes git,DVC and Mlflow.
+    - Run mlopsinabox.sh script in root directory. This installs complete setup that includes git, DVC and Mlflow.
+	```bash
+	bash mlopsinabox.sh
+	```
 ### The resulting directory structure
 ------------
 
