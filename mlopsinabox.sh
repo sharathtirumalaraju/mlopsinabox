@@ -1,5 +1,5 @@
 #start with cookiecutter template download
-python3 -m cookiecutter https://de-mucingode1.corp.capgemini.com/gitlab/Sharath.Tirumalaraju/mlopsinabox
+python3 -m cookiecutter https://github.com/sharathtirumalaraju/mlopsinabox
 #choose project directory
 read -p "enter your project name given above:" projectdirectory
 cd $projectdirectory
@@ -24,4 +24,3 @@ git commit -m "remote config"
 git push origin master
 mv config.ini $cwd/src/models
 mlflow server --backend-store-uri sqlite:///mlrun.db --default-artifact-root file:///mlrun.db
-
