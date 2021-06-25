@@ -1,10 +1,14 @@
+import os
 import mlflow
 from configparser import ConfigParser
 import dvc.api
 
+os.chdir('../../')
+file_path = os.getcwd()
+
 file='config.ini'
 config=ConfigParser()
-config.read(file)
+config.read(file_path+'/'+file)
 
 #mlflow tracking uri
 track= config['mlflow_uri']['tracking_uri']
